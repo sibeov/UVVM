@@ -1335,7 +1335,7 @@ package methods_pkg is
     constant value_type   : string         := "t_unsigned_array"
   );
 
-  -- 
+  --
 
   -- Check_value_in_range
   impure function check_value_in_range(
@@ -2841,7 +2841,7 @@ package methods_pkg is
 
   -----------------------------------------------------
   -- Adjustable Clock Generator Procedures
-  -----------------------------------------------------  
+  -----------------------------------------------------
   procedure adjustable_clock_generator(
     signal   clock_signal          : inout std_logic;
     signal   clock_ena             : in boolean;
@@ -4683,7 +4683,7 @@ package body methods_pkg is
           return false;
         end if;
       end loop;
-    else                                -- lenght or direction check not ok 
+    else                                -- lenght or direction check not ok
       return false;
     end if;
 
@@ -5023,7 +5023,7 @@ package body methods_pkg is
     constant msg_id_panel : t_msg_id_panel := shared_msg_id_panel;
     constant caller_name  : string         := "check_value()"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking     
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, error, msg, scope, msg_id, msg_id_panel, caller_name);
     return v_check_ok;
@@ -5038,7 +5038,7 @@ package body methods_pkg is
     constant msg_id_panel : t_msg_id_panel := shared_msg_id_panel;
     constant caller_name  : string         := "check_value()"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking     
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, error, msg, scope, msg_id, msg_id_panel, caller_name);
     return v_check_ok;
@@ -5053,7 +5053,7 @@ package body methods_pkg is
     constant msg_id_panel : t_msg_id_panel := shared_msg_id_panel;
     constant caller_name  : string         := "check_value()"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking     
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, error, msg, scope, msg_id, msg_id_panel, caller_name);
     return v_check_ok;
@@ -5072,7 +5072,7 @@ package body methods_pkg is
     constant caller_name      : string         := "check_value()";
     constant value_type       : string         := "t_slv_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, match_strictness, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;
@@ -5090,7 +5090,7 @@ package body methods_pkg is
     constant caller_name  : string         := "check_value()";
     constant value_type   : string         := "t_slv_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, MATCH_STD, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;
@@ -5109,7 +5109,7 @@ package body methods_pkg is
     constant caller_name      : string         := "check_value()";
     constant value_type       : string         := "t_signed_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, match_strictness, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;
@@ -5127,7 +5127,7 @@ package body methods_pkg is
     constant caller_name  : string         := "check_value()";
     constant value_type   : string         := "t_signed_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, MATCH_STD, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;
@@ -5146,7 +5146,7 @@ package body methods_pkg is
     constant caller_name      : string         := "check_value()";
     constant value_type       : string         := "t_unsigned_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, match_strictness, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;
@@ -5164,7 +5164,7 @@ package body methods_pkg is
     constant caller_name  : string         := "check_value()";
     constant value_type   : string         := "t_unsigned_array"
   ) return boolean is
-    variable v_check_ok : boolean := true; -- as default prior to checking      
+    variable v_check_ok : boolean := true; -- as default prior to checking
   begin
     v_check_ok := check_value(value, exp, MATCH_STD, error, msg, scope, radix, format, msg_id, msg_id_panel, caller_name, value_type);
     return v_check_ok;

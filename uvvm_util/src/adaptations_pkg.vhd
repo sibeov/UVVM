@@ -176,6 +176,8 @@ package adaptations_pkg is
     ID_FILE_OPEN_CLOSE,                 -- Id used when opening / closing file
     ID_FILE_PARSER,                     -- Id used in file parsers
     ID_SPEC_COV,                        -- Messages from the specification coverage methods
+    -- VCP
+    ID_VCP_TB_DEBUG,                    -- For logging with regards to TB debugging
     -- Special purpose - Not really IDs
     ALL_MESSAGES                        -- Applies to ALL message ID apart from ID_NEVER
   );
@@ -199,6 +201,7 @@ package adaptations_pkg is
     ID_FUNC_COV_RAND      => DISABLED,
     ID_FUNC_COV_SAMPLE    => DISABLED,
     ID_FUNC_COV_CONFIG    => DISABLED,
+    ID_VCP_TB_DEBUG       => DISABLED,
     others                => ENABLED
   );
 
@@ -287,12 +290,12 @@ package adaptations_pkg is
   constant C_RESULT_QUEUE_COUNT_MAX                : natural       := 20; -- (VVC Result queue)  May be overwritten for dedicated VVC
   constant C_RESULT_QUEUE_COUNT_THRESHOLD_SEVERITY : t_alert_level := WARNING;
   constant C_RESULT_QUEUE_COUNT_THRESHOLD          : natural       := 18;
-  constant C_MAX_VVC_INSTANCE_NUM                  : natural       := 10;
+  constant C_MAX_VVC_INSTANCE_NUM                  : natural       := 32;
   constant C_MAX_NUM_SEQUENCERS                    : natural       := 10; -- Max number of sequencers
   constant C_MAX_TB_VVC_NUM                        : natural       := 20; -- Max number of VVCs in testbench (including all channels)
 
   -- Maximum allowed length of VVC names
-  constant C_MAX_VVC_NAME_LENGTH : positive := 20;
+  constant C_MAX_VVC_NAME_LENGTH : positive := 30;
 
   -- Minimum width of vvc name and channel displayed in scope.
   -- These combined + the length of instance + 2 (commas), cannot exceed C_LOG_SCOPE_WIDTH.

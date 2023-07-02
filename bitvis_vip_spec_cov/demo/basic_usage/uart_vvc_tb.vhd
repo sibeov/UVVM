@@ -163,7 +163,7 @@ architecture func of uart_vvc_tb is
 
     -- End the requirement coverage process
     finalize_req_cov(VOID);
-    
+
     -----------------------------------------------------------------------------
     -- Ending the simulation
     -----------------------------------------------------------------------------

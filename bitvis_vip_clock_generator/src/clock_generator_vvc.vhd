@@ -63,7 +63,7 @@ architecture behave of clock_generator_vvc is
   signal last_cmd_idx_executed              : natural := 0;
   signal terminate_current_cmd              : t_flag_record;
   signal clock_ena                          : boolean := false;
-  -- VVC Activity 
+  -- VVC Activity
   signal entry_num_in_vvc_activity_register : integer;
 
   -- Instantiation of the element dedicated executor
