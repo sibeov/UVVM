@@ -177,7 +177,11 @@ package adaptations_pkg is
     ID_FILE_PARSER,                     -- Id used in file parsers
     ID_SPEC_COV,                        -- Messages from the specification coverage methods
     -- VCP
-    ID_VCP_TB_DEBUG,                    -- For logging with regards to TB debugging
+    ID_VCP_BFM,                         -- For logging with regards to VCP specific BFMs
+    ID_VCP_VVC,                         -- For logging with regards to VCP specific VVCs
+    ID_VCP_TH,                          -- For logging with regards to VCP specific THs
+    ID_VCP_TB,                          -- For logging with regards to VCP specific TBs
+    ID_VCP_DBG,                         -- For logging with regards to VCP general debugging
     -- Special purpose - Not really IDs
     ALL_MESSAGES                        -- Applies to ALL message ID apart from ID_NEVER
   );
@@ -201,7 +205,11 @@ package adaptations_pkg is
     ID_FUNC_COV_RAND      => DISABLED,
     ID_FUNC_COV_SAMPLE    => DISABLED,
     ID_FUNC_COV_CONFIG    => DISABLED,
-    ID_VCP_TB_DEBUG       => DISABLED,
+    ID_VCP_BFM            => DISABLED,
+    ID_VCP_VVC            => DISABLED,
+    ID_VCP_TB             => DISABLED,
+    ID_VCP_TH             => DISABLED,
+    ID_VCP_DBG            => DISABLED,
     others                => ENABLED
   );
 
