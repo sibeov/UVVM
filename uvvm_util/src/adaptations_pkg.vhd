@@ -306,13 +306,8 @@ package adaptations_pkg is
   constant C_CMD_QUEUE_COUNT_THRESHOLD             : natural       := 950;
   constant C_RESULT_QUEUE_COUNT_MAX                : natural       := 1000; -- (VVC Result queue)  May be overwritten for dedicated VVC
   constant C_RESULT_QUEUE_COUNT_THRESHOLD_SEVERITY : t_alert_level := WARNING;
-<<<<<<< HEAD
-  constant C_RESULT_QUEUE_COUNT_THRESHOLD          : natural       := 18;
-  constant C_MAX_VVC_INSTANCE_NUM                  : natural       := 32;
-=======
   constant C_RESULT_QUEUE_COUNT_THRESHOLD          : natural       := 950;
   constant C_MAX_VVC_INSTANCE_NUM                  : natural       := 10;
->>>>>>> e0d0bf006263581d6ac48d08d691fb3a51f94487
   constant C_MAX_NUM_SEQUENCERS                    : natural       := 10; -- Max number of sequencers
   constant C_MAX_TB_VVC_NUM                        : natural       := 20; -- Max number of VVCs in testbench (including all channels)
 
