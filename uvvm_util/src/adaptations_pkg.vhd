@@ -175,11 +175,10 @@ package adaptations_pkg is
     -- Specification requirement coverage
     ID_SPEC_COV_INIT,                   -- Used for logging specification requirement coverage initialization
     ID_SPEC_COV_REQS,                   -- Used for logging the specification requirement list
-    ID_SPEC_COV,                        -- Used for logging general specification requirement coverage methods
+    ID_SPEC_COV,                        -- Messages from the specification coverage methods
     -- File handling
     ID_FILE_OPEN_CLOSE,                 -- Id used when opening / closing file
     ID_FILE_PARSER,                     -- Id used in file parsers
-    ID_SPEC_COV,                        -- Messages from the specification coverage methods
     -- VCP
     ID_VCP_BFM,                         -- For logging with regards to VCP specific BFMs
     ID_VCP_VVC,                         -- For logging with regards to VCP specific VVCs
